@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="citar">
+      <UniqueIdentifier>{61330027-f5ea-4e81-995d-6f594c0c2408}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\citar">
+      <UniqueIdentifier>{3e734885-314c-47f5-9e2e-b4b77ee753e1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="KeywordExtractor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\citar\WordSuffixTree.cpp">
+      <Filter>Source Files\citar</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\citar\SuffixWordHandler.cpp">
+      <Filter>Source Files\citar</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\citar\ModelPrivate.cpp">
+      <Filter>Source Files\citar</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\citar\train.cpp">
+      <Filter>Source Files\citar</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\citar\BrownCorpusReader.cpp">
+      <Filter>Source Files\citar</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\citar\BrownCorpusReaderPrivate.cpp">
+      <Filter>Source Files\citar</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\citar\evaluate.cpp">
+      <Filter>Source Files\citar</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\citar\cwrap.cpp">
+      <Filter>Source Files\citar</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\citar\HMMTagger.cpp">
+      <Filter>Source Files\citar</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\citar\HMMTaggerPrivate.cpp">
+      <Filter>Source Files\citar</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\citar\KnownWordHandler.cpp">
+      <Filter>Source Files\citar</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\citar\LinearInterpolationSmoothing.cpp">
+      <Filter>Source Files\citar</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\citar\LinearInterpolationSmoothingPrivate.cpp">
+      <Filter>Source Files\citar</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\citar\Model.cpp">
+      <Filter>Source Files\citar</Filter>
+    </ClCompile>
+    <ClCompile Include="KeywordExtractor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\citar\EntryPoint.cpp">
+      <Filter>Source Files\citar</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\citar\BiGram.h">
+      <Filter>citar</Filter>
+    </None>
+    <None Include="..\..\citar\BrownCorpusReader.h">
+      <Filter>citar</Filter>
+    </None>
+    <None Include="..\..\citar\BrownCorpusReaderPrivate.h">
+      <Filter>citar</Filter>
+    </None>
+    <None Include="..\..\citar\CorpusReader.h">
+      <Filter>citar</Filter>
+    </None>
+    <None Include="..\..\citar\cwrap.h">
+      <Filter>citar</Filter>
+    </None>
+    <None Include="..\..\citar\cwrap.i.h">
+      <Filter>citar</Filter>
+    </None>
+    <None Include="..\..\citar\HMMTagger.h">
+      <Filter>citar</Filter>
+    </None>
+    <None Include="..\..\citar\HMMTaggerPrivate.h">
+      <Filter>citar</Filter>
+    </None>
+    <None Include="..\..\citar\KnownWordHandler.h">
+      <Filter>citar</Filter>
+    </None>
+    <None Include="..\..\citar\LinearInterpolationSmoothing.h">
+      <Filter>citar</Filter>
+    </None>
+    <None Include="..\..\citar\LinearInterpolationSmoothingPrivate.h">
+      <Filter>citar</Filter>
+    </None>
+    <None Include="..\..\citar\Model.h">
+      <Filter>citar</Filter>
+    </None>
+    <None Include="..\..\citar\ModelPrivate.h">
+      <Filter>citar</Filter>
+    </None>
+    <None Include="..\..\citar\NonCopyable.h">
+      <Filter>citar</Filter>
+    </None>
+    <None Include="..\..\citar\PairSecondGtComp.h">
+      <Filter>citar</Filter>
+    </None>
+    <None Include="..\..\citar\SentenceHandler.h">
+      <Filter>citar</Filter>
+    </None>
+    <None Include="..\..\citar\Smoothing.h">
+      <Filter>citar</Filter>
+    </None>
+    <None Include="..\..\citar\SuffixWordHandler.h">
+      <Filter>citar</Filter>
+    </None>
+    <None Include="..\..\citar\TaggedWord.h">
+      <Filter>citar</Filter>
+    </None>
+    <None Include="..\..\citar\TagMatrixEntry.h">
+      <Filter>citar</Filter>
+    </None>
+    <None Include="..\..\citar\TriGram.h">
+      <Filter>citar</Filter>
+    </None>
+    <None Include="..\..\citar\UniGram.h">
+      <Filter>citar</Filter>
+    </None>
+    <None Include="..\..\citar\WordHandler.h">
+      <Filter>citar</Filter>
+    </None>
+    <None Include="..\..\citar\WordSuffixTree.h">
+      <Filter>citar</Filter>
+    </None>
+    <None Include="Source.def">
+      <Filter>Source Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>

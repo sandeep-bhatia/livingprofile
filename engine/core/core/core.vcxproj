@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <DefineConstants>DEBUG</DefineConstants>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{1B9517C9-9E5E-4295-9E98-39AD88594913}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>core</RootNamespace>
+    <ProjectName>dekode.engine</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120_CTP_Nov2012</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <BrowseInformation>true</BrowseInformation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ModuleDefinitionFile>Source.def</ModuleDefinitionFile>
+    </Link>
+    <Bscmake>
+      <PreserveSbr>true</PreserveSbr>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ModuleDefinitionFile>Source.def</ModuleDefinitionFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="KeywordExtractor.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\citar\BrownCorpusReader.cpp" />
+    <ClCompile Include="..\..\citar\BrownCorpusReaderPrivate.cpp" />
+    <ClCompile Include="..\..\citar\cwrap.cpp" />
+    <ClCompile Include="..\..\citar\evaluate.cpp" />
+    <ClCompile Include="..\..\citar\HMMTagger.cpp" />
+    <ClCompile Include="..\..\citar\HMMTaggerPrivate.cpp" />
+    <ClCompile Include="..\..\citar\KnownWordHandler.cpp" />
+    <ClCompile Include="..\..\citar\LinearInterpolationSmoothing.cpp" />
+    <ClCompile Include="..\..\citar\LinearInterpolationSmoothingPrivate.cpp" />
+    <ClCompile Include="..\..\citar\Model.cpp" />
+    <ClCompile Include="..\..\citar\ModelPrivate.cpp" />
+    <ClCompile Include="..\..\citar\SuffixWordHandler.cpp" />
+    <ClCompile Include="..\..\citar\EntryPoint.cpp" />
+    <ClCompile Include="..\..\citar\train.cpp" />
+    <ClCompile Include="..\..\citar\WordSuffixTree.cpp" />
+    <ClCompile Include="core.cpp" />
+    <ClCompile Include="KeywordExtractor.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\citar\BiGram.h" />
+    <None Include="..\..\citar\BrownCorpusReader.h" />
+    <None Include="..\..\citar\BrownCorpusReaderPrivate.h" />
+    <None Include="..\..\citar\CorpusReader.h" />
+    <None Include="..\..\citar\cwrap.h" />
+    <None Include="..\..\citar\cwrap.i.h" />
+    <None Include="..\..\citar\HMMTagger.h" />
+    <None Include="..\..\citar\HMMTaggerPrivate.h" />
+    <None Include="..\..\citar\KnownWordHandler.h" />
+    <None Include="..\..\citar\LinearInterpolationSmoothing.h" />
+    <None Include="..\..\citar\LinearInterpolationSmoothingPrivate.h" />
+    <None Include="..\..\citar\Model.h" />
+    <None Include="..\..\citar\ModelPrivate.h" />
+    <None Include="..\..\citar\NonCopyable.h" />
+    <None Include="..\..\citar\PairSecondGtComp.h" />
+    <None Include="..\..\citar\SentenceHandler.h" />
+    <None Include="..\..\citar\Smoothing.h" />
+    <None Include="..\..\citar\SuffixWordHandler.h" />
+    <None Include="..\..\citar\TaggedWord.h" />
+    <None Include="..\..\citar\TagMatrixEntry.h" />
+    <None Include="..\..\citar\TriGram.h" />
+    <None Include="..\..\citar\UniGram.h" />
+    <None Include="..\..\citar\WordHandler.h" />
+    <None Include="..\..\citar\WordSuffixTree.h" />
+    <None Include="Source.def" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
